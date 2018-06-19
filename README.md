@@ -6,7 +6,7 @@
 
 ### Installation
 ```bash
-$ npm install --save sequelize-extension
+$ npm install --save sequelize-extension-deletedBy
 ```
 
 ### Usage
