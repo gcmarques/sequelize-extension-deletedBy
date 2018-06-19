@@ -11,7 +11,7 @@ $ npm install --save sequelize-extension
 
 ### Usage
 
-This library uses [sequelize-extension](https://www.npmjs.com/package/sequelize-extension) to extend sequelize models. If a model has a `deletedBy` field, this extension will automatically add `options.user.id` to `deletedBy`.
+This library uses [sequelize-extension](https://www.npmjs.com/package/sequelize-extension) to extend sequelize models. If a model has a `deletedBy` field, this extension will automatically set `deletedBy` to `options.user.id` when an instance is destroyed.
 ```javascript
 await task.destroy({ user: { id: 2 } });
 console.log(task1.deletedBy);
