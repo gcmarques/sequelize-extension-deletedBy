@@ -46,6 +46,6 @@ function enhanceDeletedBy() {
         });
       }
     });
-  }
+  };
 }
 module.exports = enhanceDeletedBy;
