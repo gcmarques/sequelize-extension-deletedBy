@@ -20,7 +20,7 @@ function enhanceDeletedBy() {
             transaction = await sequelize.transaction();
           }
           options.transaction = transaction;
-          const instances = await utils.getBulkedInstances(model, options);
+          await utils.getBulkedInstances(model, options);
           utils.setTriggerParams(options, 'deletedBy', { transaction, auto });
         });
 
