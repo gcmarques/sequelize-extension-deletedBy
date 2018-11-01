@@ -1,6 +1,6 @@
 {
   "name": "sequelize-extension-deletedby",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "This extension will automatically add options.user.id to deletedBy when an instance is destroyed.",
   "main": "index.js",
   "scripts": {
