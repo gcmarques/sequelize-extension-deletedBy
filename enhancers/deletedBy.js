@@ -6,7 +6,6 @@ function enhanceDeletedBy() {
     _.each(db, (model) => {
       if (utils.isModel(model) && _.has(utils.getRawAttributes(model), 'deletedBy')) {
         const name = utils.getName(model);
-        const sequelize = utils.getSequelize(model);
 
         hooks[name].beforeDestroy.push((instance, options) => {
           instance.deletedBy = options.user.id;
